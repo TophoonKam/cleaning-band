@@ -2,21 +2,31 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>КлинигBAND — Клиниговая компания</title>
+  <title>КлинигBAND — Клининговая компания</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #4caf50; color: #fff; padding: 30px 0; text-align: center; }
-    nav { background: #333; color: #fff; text-align: center; }
-    nav a { color: #fff; margin: 0 25px; text-decoration: none; }
+    header { background: linear-gradient(135deg, #4caf50, #81c784); color: #fff; padding: 40px 0; text-align: center; }
+    .hero-section { background: linear-gradient(135deg, #e1f5fe, #b3e5fc); padding: 50px 20px; text-align: center; }
+    .brilliant-clean { background: linear-gradient(45deg, #ffd700, #ffeb3b); color: #333; padding: 30px; border-radius: 20px; margin: 20px auto; max-width: 600px; box-shadow: 0 8px 25px rgba(255,215,0,0.3); text-align: center; font-size: 24px; font-weight: bold; animation: sparkle 2s infinite; }
+    @keyframes sparkle { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    nav { background: #333; padding: 20px 0; text-align: center; }
+    .nav-tools { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    .nav-tool { background: linear-gradient(135deg, #4caf50, #66bb6a); color: #fff; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-size: 18px; font-weight: bold; box-shadow: 0 4px 15px rgba(76,175,80,0.3); transition: all 0.3s ease; display: flex; align-items: center; gap: 10px; }
+    .nav-tool:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(76,175,80,0.5); background: linear-gradient(135deg, #388e3c, #4caf50); }
     section { padding: 40px 20px; max-width: 900px; margin: auto; }
     .services { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
-    .service { background: #f4f4f4; padding: 20px; border-radius: 8px; width: 230px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-    footer { background: #333; color: #fff; text-align: center; padding: 15px 0; }
-    .contact-form { background: #e3e3e3; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
-    input, textarea { width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
-    button { background: #4caf50; color: #fff; border: none; padding: 10px 16px; border-radius: 4px; cursor: pointer; }
-    button:hover { background: #388e3c; }
+    .service { background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 25px; border-radius: 15px; width: 230px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease; }
+    .service:hover { transform: translateY(-5px); }
+    footer { background: #333; color: #fff; text-align: center; padding: 20px 0; }
+    .contact-form { background: linear-gradient(135deg, #e3f2fd, #bbdefb); padding: 30px; border-radius: 15px; max-width: 450px; margin: auto; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+    input, textarea { width: 100%; margin: 10px 0; padding: 12px; border-radius: 8px; border: 2px solid #ddd; font-size: 16px; }
+    button { background: linear-gradient(135deg, #4caf50, #66bb6a); color: #fff; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: all 0.3s ease; }
+    button:hover { background: linear-gradient(135deg, #388e3c, #4caf50); transform: translateY(-2px); }
+    h1, h2 { margin: 15px 0; }
+    .emoji-large { font-size: 2.5em; margin: 0 10px; }
+    .reviews { background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 30px; border-radius: 15px; margin: 20px 0; }
+    @media (max-width: 768px) { .nav-tools { flex-direction: column; align-items: center; } .nav-tool { width: 200px; justify-content: center; } }
   </style>
 </head>
 <body>
@@ -24,46 +34,92 @@
     <h1>КлинигBAND</h1>
     <p>Профессиональная уборка квартир и офисов</p>
   </header>
+  
+  <div class="hero-section">
+    <div class="brilliant-clean">
+      💎✨ БРЕЛЯТНОЙ ЧИСТОТЫ ✨🧽
+      <div style="font-size: 16px; margin-top: 10px; font-weight: normal;">
+        Сияющая чистота в каждом уголке вашего дома!
+      </div>
+    </div>
+  </div>
+  
   <nav>
-    <a href="#about">О компании</a>
-    <a href="#services">Услуги</a>
-    <a href="#reviews">Отзывы</a>
-    <a href="#contact">Контакты</a>
+    <div class="nav-tools">
+      <a href="#about" class="nav-tool">
+        <span class="emoji-large">🧹</span>
+        О компании
+      </a>
+      <a href="#services" class="nav-tool">
+        <span class="emoji-large">🧽</span>
+        Услуги
+      </a>
+      <a href="#reviews" class="nav-tool">
+        <span class="emoji-large">🫧</span>
+        Отзывы
+      </a>
+      <a href="#contact" class="nav-tool">
+        <span class="emoji-large">🧺</span>
+        Контакты
+      </a>
+    </div>
   </nav>
+  
   <section id="about">
-    <h2>О компании</h2>
-    <p>КлинигBAND — ваш надежный помощник по уборке. Опытные сотрудники, современное оборудование и эко-средства!</p>
+    <h2>🧴 О компании</h2>
+    <p>КлинигBAND — ваш надежный помощник по уборке. Опытные сотрудники, современное оборудование и эко-средства! Мы гарантируем брелятную чистоту в каждом доме!</p>
   </section>
+  
   <section id="services">
-    <h2>Наши услуги</h2>
+    <h2>✨ Наши услуги</h2>
     <div class="services">
-      <div class="service">Генеральная уборка</div>
-      <div class="service">Ежедневная уборка</div>
-      <div class="service">Уборка после ремонта</div>
-      <div class="service">Уборка офисов</div>
-      <div class="service">Химчистка мебели</div>
+      <div class="service">
+        <div class="emoji-large">🏠</div>
+        <strong>Генеральная уборка</strong>
+      </div>
+      <div class="service">
+        <div class="emoji-large">📅</div>
+        <strong>Ежедневная уборка</strong>
+      </div>
+      <div class="service">
+        <div class="emoji-large">🔨</div>
+        <strong>Уборка после ремонта</strong>
+      </div>
+      <div class="service">
+        <div class="emoji-large">🏢</div>
+        <strong>Уборка офисов</strong>
+      </div>
+      <div class="service">
+        <div class="emoji-large">🛋️</div>
+        <strong>Химчистка мебели</strong>
+      </div>
     </div>
   </section>
+  
   <section id="reviews">
-    <h2>Отзывы клиентов</h2>
-    <p>«Быстро, профессионально, рекомендую!» — Иван</p>
-    <p>«Всегда чисто, команда супер!» — Мария</p>
+    <h2>💬 Отзывы клиентов</h2>
+    <div class="reviews">
+      <p><strong>⭐⭐⭐⭐⭐</strong><br>«Быстро, профессионально, рекомендую! Дом сияет как брелят!» — Иван</p>
+      <p><strong>⭐⭐⭐⭐⭐</strong><br>«Всегда чисто, команда супер! Настоящие мастера своего дела!» — Мария</p>
+    </div>
   </section>
+  
   <section id="contact">
-    <h2>Контакты и заказ услуги</h2>
-    <p>Телефон: +7 (999) 888-77-66<br>Email: info@cleaningband.ru</p>
+    <h2>📞 Контакты и заказ услуги</h2>
+    <p><strong>Телефон:</strong> +7 (999) 888-77-66<br><strong>Email:</strong> info@cleaningband.ru</p>
     <form class="contact-form">
       <label for="name">Ваше имя:</label>
       <input type="text" id="name" name="name" required>
       <label for="phone">Телефон:</label>
       <input type="tel" id="phone" name="phone" required>
       <label for="message">Сообщение:</label>
-      <textarea id="message" name="message"></textarea>
-      <button type="submit">Отправить заявку</button>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <button type="submit">✨ Отправить заявку ✨</button>
     </form>
   </section>
+  
   <footer>
-    &copy; 2025 КлинигBAND
+    <p>© 2025 КлинигBAND 💎 Брелятная чистота для вашего дома! 💎</p>
   </footer>
 </body>
 </html>
