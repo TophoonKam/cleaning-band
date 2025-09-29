@@ -38,12 +38,44 @@
     }
     
     header { 
-      background: linear-gradient(135deg, #4caf50, #81c784); 
+      background: linear-gradient(135deg, rgba(76,175,80,0.8), rgba(129,199,132,0.8)), url('generated-image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: #fff; 
-      padding: 40px 0; 
+      padding: 60px 0; 
       text-align: center;
       position: relative;
       z-index: 1;
+      min-height: 200px;
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+    
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin: 15px 0;
+    }
+    
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+    
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
     
     .hero-section { 
@@ -200,7 +232,10 @@
       .nav-tool { 
         width: 200px; 
         justify-content: center; 
-      } 
+      }
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
@@ -277,22 +312,22 @@
   <section id="reviews">
     <h2>💬 Отзывы клиентов</h2>
     <div class="reviews">
-      <p>⭐⭐⭐⭐⭐<br>
+      <p>⭐⭐⭐⭐⭐<br/>
       «Быстро, профессионально, рекомендую! Дом сияет как бриллиант!» — Иван</p>
-      <p>⭐⭐⭐⭐⭐<br>
+      <p>⭐⭐⭐⭐⭐<br/>
       «Всегда чисто, команда супер! Настоящие мастера своего дела!» — Мария</p>
     </div>
   </section>
   
   <section id="contact">
     <h2>📞 Контакты и заказ услуги</h2>
-    <p>Телефон: +7 (999) 888-77-66<br>
+    <p>Телефон: +7 (999) 888-77-66<br/>
     Email: info@cleaningband.ru</p>
     <form class="contact-form">
       <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required/>
       <label for="phone">Телефон:</label>
-      <input type="tel" id="phone" name="phone" required>
+      <input type="tel" id="phone" name="phone" required/>
       <label for="message">Сообщение:</label>
       <textarea id="message" name="message" rows="4"></textarea>
       <button type="submit">✨ Отправить заявку ✨</button>
@@ -300,7 +335,7 @@
   </section>
   
   <footer>
-    <p>© 2025 КлинингBAND 💎 Бриллиантная чистота для вашего дома! 💎</p>
+    © 2025 КлинингBAND 💎 Бриллиантная чистота для вашего дома! 💎
   </footer>
   
   <script>
