@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>КлинигBAND — Клиниговая компания</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #4caf50; color: #fff; padding: 30px 0; text-align: center; }
+    nav { background: #333; color: #fff; text-align: center; }
+    nav a { color: #fff; margin: 0 25px; text-decoration: none; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .services { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .service { background: #f4f4f4; padding: 20px; border-radius: 8px; width: 230px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    footer { background: #333; color: #fff; text-align: center; padding: 15px 0; }
+    .contact-form { background: #e3e3e3; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
+    input, textarea { width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #4caf50; color: #fff; border: none; padding: 10px 16px; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #388e3c; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>КлинигBAND</h1>
+    <p>Профессиональная уборка квартир и офисов</p>
+  </header>
+  <nav>
+    <a href="#about">О компании</a>
+    <a href="#services">Услуги</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <section id="about">
+    <h2>О компании</h2>
+    <p>КлинигBAND — ваш надежный помощник по уборке. Опытные сотрудники, современное оборудование и эко-средства!</p>
+  </section>
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+      <div class="service">Генеральная уборка</div>
+      <div class="service">Ежедневная уборка</div>
+      <div class="service">Уборка после ремонта</div>
+      <div class="service">Уборка офисов</div>
+      <div class="service">Химчистка мебели</div>
+    </div>
+  </section>
+  <section id="reviews">
+    <h2>Отзывы клиентов</h2>
+    <p>«Быстро, профессионально, рекомендую!» — Иван</p>
+    <p>«Всегда чисто, команда супер!» — Мария</p>
+  </section>
+  <section id="contact">
+    <h2>Контакты и заказ услуги</h2>
+    <p>Телефон: +7 (999) 888-77-66<br>Email: info@cleaningband.ru</p>
+    <form class="contact-form">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 КлинигBAND
+  </footer>
+</body>
+</html>
